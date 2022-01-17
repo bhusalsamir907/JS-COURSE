@@ -5,4 +5,4 @@ document.write("Writing js code");
      harry:99
  };
 
- document.write(marks);
+ document.getElementById("para1").innerHTML=marks.harry;
