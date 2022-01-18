@@ -40,3 +40,25 @@ function ageValidation() {
 
 }
 
+
+// Arrays iteration 
+// technique 1
+
+let arr=['samir bhusal', '&nbsp ravi sharma', '&nbsp Kalo usa', '&nbsp Sanjay karki'];
+// document.write(arr);
+for(let i=0;i<arr.length;i++){
+    document.write(arr[i]+"<br><br>");
+}
+
+// Break and Continue
+
+for(let i=0;i<arr.length;i++){
+    if(i==2){
+        break; //break exits the loop after 2 index
+        // continue; // index 2 is cancled and other are carried.
+    }
+    document.write(arr[i]+"<br><br>");
+}
+
+
+
