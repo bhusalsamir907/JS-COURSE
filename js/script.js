@@ -1,64 +1,104 @@
-document.getElementById('para0').innerHTML = "Writing js code";
-let marks = {
-    ravi: 90,
-    shubham: 80,
-    harry: 99
-};
+// document.getElementById('para0').innerHTML = "Writing js code";
+// let marks = {
+//     ravi: 90,
+//     shubham: 80,
+//     harry: 99
+// };
 
-function paraChnge() {
-    document.getElementById('spn').innerHTML = "This is first paragraph from JS";
-}
-
-
-document.getElementById("para1").innerHTML = marks.harry;
-
-//  Functions in JS
-function myFunction(a, b) {
-    return a * b;
-}
-
-document.getElementById("para2").innerHTML = myFunction(10, 20);
-
-//  Avg function
-function avg(a, b) {
-    return (a + b) / 2;
-
-}
-c1 = avg(20, 10);
-document.getElementById('spn1').innerHTML = c1;
-
-// Conditionals in JS 
-function ageValidation() {
-    let age = prompt("Enter Your Age:");
-
-    if (age >= 18) {
-        document.write("<br><br>Elligible to Vote")
-    }
-    else {
-        document.write("Not Eligible");
-    }
-
-}
+// function paraChnge() {
+//     document.getElementById('spn').innerHTML = "This is first paragraph from JS";
+// }
 
 
-// Arrays iteration 
-// technique 1
+// document.getElementById("para1").innerHTML = marks.harry;
 
-let arr=['samir bhusal', '&nbsp ravi sharma', '&nbsp Kalo usa', '&nbsp Sanjay karki'];
-// document.write(arr);
-for(let i=0;i<arr.length;i++){
-    document.write(arr[i]+"<br><br>");
-}
+// //  Functions in JS
+// function myFunction(a, b) {
+//     return a * b;
+// }
 
-// Break and Continue
+// document.getElementById("para2").innerHTML = myFunction(10, 20);
 
-for(let i=0;i<arr.length;i++){
-    if(i==2){
-        break; //break exits the loop after 2 index
-        // continue; // index 2 is cancled and other are carried.
-    }
-    document.write(arr[i]+"<br><br>");
-}
+// //  Avg function
+// function avg(a, b) {
+//     return (a + b) / 2;
+
+// }
+// c1 = avg(20, 10);
+// document.getElementById('spn1').innerHTML = c1;
+
+// // Conditionals in JS 
+// function ageValidation() {
+//     let age = prompt("Enter Your Age:");
+
+//     if (age >= 18) {
+//         document.write("<br><br>Elligible to Vote")
+//     }
+//     else {
+//         document.write("Not Eligible");
+//     }
+
+// }
+
+
+// // Arrays iteration 
+// // technique 1
+
+// let arr=['samir bhusal', '&nbsp ravi sharma', '&nbsp Kalo usa', '&nbsp Sanjay karki'];
+// // document.write(arr);
+// for(let i=0;i<arr.length;i++){
+//     document.write(arr[i]+"<br><br>");
+// }
+
+// // Break and Continue
+
+// for(let i=0;i<arr.length;i++){
+//     if(i==2){
+//         break; //break exits the loop after 2 index
+//         // continue; // index 2 is cancled and other are carried.
+//     }
+//     document.write(arr[i]+"<br><br>");
+// }
+
+// // Array Methods
+ 
+// let myArr=['USA', 'Iphone', 32, null, true];
+// document.write(myArr.length +"<br><br>");
+// document.write(myArr+'<br><br>');
+
+// myArr.pop();//pop methods removes last elements of an array (i.e. true);
+// document.write(myArr.length+'<br><br>');
+// document.write(myArr+'<br><br>');
+// myArr.push("Samir Bhusal"); //inserts/appends new elements at end of array
+// document.write(myArr+'<br><br>');
+
+// // myArr.shift(); //Removes first element in an array.
+// // document.write(myArr+'<br><br>');
+
+// myArr.unshift("Legion"); //appends new elements at start of an array.
+// document.write(myArr+'<br><br>');
+// // document.write(myArr.toString());
+// document.write(myArr.sort());
+
+// String Methods in JS
+let myStrng ="Samir Bhusal learning JS";
+ document.write(myStrng+"<br><br>");
+ document.write("Length of myStrng :&nbsp"+ myStrng.length +"<br>");
+//  document.write(myStrng.indexOf("JS"));
+ document.write(myStrng.lastIndexOf("JS"));
+ document.write("<br>");
+ document.write(myStrng.slice(0,7));
+
+ document.write("<br>");
+document.write(myStrng.replace("Samir", "Rishab"));
+
+
+
+
+
+
+
+
 
 
 
