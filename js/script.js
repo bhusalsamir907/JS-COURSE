@@ -1,4 +1,4 @@
-document.write("Writing js code");
+document.getElementById('para0').innerHTML = "Writing js code";
 let marks = {
     ravi: 90,
     shubham: 80,
@@ -24,5 +24,19 @@ function avg(a, b) {
     return (a + b) / 2;
 
 }
-c1=avg(20, 10);
-console.log(c1);
+c1 = avg(20, 10);
+document.getElementById('spn1').innerHTML = c1;
+
+// Conditionals in JS 
+function ageValidation() {
+    let age = prompt("Enter Your Age:");
+
+    if (age >= 18) {
+        document.write("<br><br>Elligible to Vote")
+    }
+    else {
+        document.write("Not Eligible");
+    }
+
+}
+
