@@ -81,23 +81,30 @@
 // document.write(myArr.sort());
 
 // String Methods in JS
-let myStrng ="Samir Bhusal learning JS";
- document.write(myStrng+"<br><br>");
- document.write("Length of myStrng :&nbsp"+ myStrng.length +"<br>");
-//  document.write(myStrng.indexOf("JS"));
- document.write(myStrng.lastIndexOf("JS"));
- document.write("<br>");
- document.write(myStrng.slice(0,7));
+// let myStrng ="Samir Bhusal learning JS";
+//  document.write(myStrng+"<br><br>");
+//  document.write("Length of myStrng :&nbsp"+ myStrng.length +"<br>");
+// //  document.write(myStrng.indexOf("JS"));
+//  document.write(myStrng.lastIndexOf("JS"));
+//  document.write("<br>");
+//  document.write(myStrng.slice(0,7));
 
- document.write("<br>");
-document.write(myStrng.replace("Samir", "Rishab"));
+//  document.write("<br>");
+// document.write(myStrng.replace("Samir", "Rishab"));
 
-
-
-
+// 
 
 
 
+
+
+// Dates in JS
+
+
+let myDate = new Date();
+document.write("<br>"+myDate.getUTCFullYear()+"<br>");
+document.write("<br>"+myDate.getDate()+"<br>");
+document.write("<br>"+myDate.getUTCMilliseconds()+"<br>");
 
 
 
