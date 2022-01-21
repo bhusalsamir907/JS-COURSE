@@ -61,7 +61,7 @@
 // }
 
 // // Array Methods
- 
+
 // let myArr=['USA', 'Iphone', 32, null, true];
 // document.write(myArr.length +"<br><br>");
 // document.write(myArr+'<br><br>');
@@ -102,17 +102,17 @@
 
 
 let myDate = new Date();
-document.write("<br>"+myDate.getUTCFullYear()+"<br>");
-document.write("<br>"+myDate.getDate()+"<br>");
-document.write("<br>"+myDate.getUTCMilliseconds()+"<br>");
+document.write("<br>" + myDate.getUTCFullYear() + "<br>");
+document.write("<br>" + myDate.getDate() + "<br>");
+document.write("<br>" + myDate.getUTCMilliseconds() + "<br>");
 
 // DOM Manipulations JS
 
-document.getElementById('btn').style.border= '2px solid red';
+document.getElementById('btn').style.border = '2px solid red';
 let elem = document.getElementById('btn');
 // document.write(elem);
 console.log(elem);
- 
+
 let elemClass = document.getElementsByClassName('container');
 console.log(elemClass);
 // elemClass[0].style.background="white";
@@ -124,3 +124,22 @@ console.log(sel);
 
 sel = document.querySelectorAll('.container');
 console.log(sel);
+
+
+// JS Events
+
+function paraChnge() {
+    document.getElementById('spn').innerHTML = 'JS Click event changes the paragraph.'
+}
+
+document.getElementById('btn').addEventListener('click', function () {
+    document.getElementById('para0').innerHTML = "HTML DOM addEventListener() Method Used";
+})
+
+document.getElementById('btn').addEventListener('mouseover', function () {
+    document.getElementById('spn1').innerHTML = "Mouse Over btn";
+})
+
+firstContainer.addEventListener('mouseout', function () {
+    document.getElementById('para2').innerHTML = "Mouse out of container";
+})
