@@ -101,45 +101,62 @@
 // Dates in JS
 
 
-let myDate = new Date();
-document.write("<br>" + myDate.getUTCFullYear() + "<br>");
-document.write("<br>" + myDate.getDate() + "<br>");
-document.write("<br>" + myDate.getUTCMilliseconds() + "<br>");
+// let myDate = new Date();
+// document.write("<br>" + myDate.getUTCFullYear() + "<br>");
+// document.write("<br>" + myDate.getDate() + "<br>");
+// document.write("<br>" + myDate.getUTCMilliseconds() + "<br>");
 
-// DOM Manipulations JS
+// // DOM Manipulations JS
 
-document.getElementById('btn').style.border = '2px solid red';
-let elem = document.getElementById('btn');
-// document.write(elem);
-console.log(elem);
+// document.getElementById('btn').style.border = '2px solid red';
+// let elem = document.getElementById('btn');
+// // document.write(elem);
+// console.log(elem);
 
-let elemClass = document.getElementsByClassName('container');
-console.log(elemClass);
-// elemClass[0].style.background="white";
-elemClass[0].classList.add('bg-primary');
+// let elemClass = document.getElementsByClassName('container');
+// console.log(elemClass);
+// // elemClass[0].style.background="white";
+// elemClass[0].classList.add('bg-primary');
 
-// Selecting Using Query
-sel = document.querySelector('.container');
-console.log(sel);
+// // Selecting Using Query
+// sel = document.querySelector('.container');
+// console.log(sel);
 
-sel = document.querySelectorAll('.container');
-console.log(sel);
+// sel = document.querySelectorAll('.container');
+// console.log(sel);
 
 
 // JS Events
+// {
+// function paraChnge() {
+//     document.getElementById('spn').innerHTML = 'JS Click event changes the paragraph.'
+// }
 
-function paraChnge() {
-    document.getElementById('spn').innerHTML = 'JS Click event changes the paragraph.'
+// document.getElementById('btn').addEventListener('click', function () {
+//     document.getElementById('para0').innerHTML = "HTML DOM addEventListener() Method Used";
+// })
+
+// document.getElementById('btn').addEventListener('mouseover', function () {
+//     document.getElementById('spn1').innerHTML = "Mouse Over btn";
+// })
+
+// firstContainer.addEventListener('mouseout', function () {
+//     document.getElementById('para2').innerHTML = "Mouse out of container";
+// })
+// }
+
+// Arrow Function
+// let sum1 = (a, b)=>{
+//     return a+b;
+// }
+
+// document.getElementById('spn1').innerHTML=sum1(10,20);
+
+// SetTimeOut & SetInterval
+log1 = ()=>{
+    document.getElementById('para3').innerHTML="SetTimeOut() Called";
 }
+setTimeout(log1, 2000);
 
-document.getElementById('btn').addEventListener('click', function () {
-    document.getElementById('para0').innerHTML = "HTML DOM addEventListener() Method Used";
-})
 
-document.getElementById('btn').addEventListener('mouseover', function () {
-    document.getElementById('spn1').innerHTML = "Mouse Over btn";
-})
 
-firstContainer.addEventListener('mouseout', function () {
-    document.getElementById('para2').innerHTML = "Mouse out of container";
-})
