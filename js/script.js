@@ -106,6 +106,14 @@ document.write("<br>"+myDate.getUTCFullYear()+"<br>");
 document.write("<br>"+myDate.getDate()+"<br>");
 document.write("<br>"+myDate.getUTCMilliseconds()+"<br>");
 
+// DOM Manipulations JS
 
-
-
+document.getElementById('btn').style.border= '2px solid red';
+let elem = document.getElementById('btn');
+// document.write(elem);
+console.log(elem);
+ 
+let elemClass = document.getElementsByClassName('container');
+console.log(elemClass);
+// elemClass[0].style.background="white";
+elemClass[0].classList.add('bg-primary');

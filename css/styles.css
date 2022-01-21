@@ -1,0 +1,27 @@
+*{
+    font-family: "Comic Sans Ms";
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    background-color: burlywood;
+    border: 4px solid green;
+    margin: 3px; 
+    /* padding: 3px; */
+
+
+}
+
+.bg-primary{
+    background: chartreuse;
+    /* font-weight: 900; */
+    border-radius:10px;
+    padding:10px;
+}
+
+#spn{
+font-size: 20px;
+font-weight: 600;
+font-style: italic;
+font-family: "Comic Sans MS";
+}
