@@ -117,3 +117,10 @@ let elemClass = document.getElementsByClassName('container');
 console.log(elemClass);
 // elemClass[0].style.background="white";
 elemClass[0].classList.add('bg-primary');
+
+// Selecting Using Query
+sel = document.querySelector('.container');
+console.log(sel);
+
+sel = document.querySelectorAll('.container');
+console.log(sel);
